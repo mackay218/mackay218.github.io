@@ -1,0 +1,333 @@
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2{
+  font-family: "Titillium Web", sans-serif;
+  border-bottom: 10px solid #7c7c7c;
+}
+
+/*****NAV*********/
+
+/* menu */
+.bar{
+  background-color: #fff;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.hero-color {
+  background-color: #fff;
+}
+.person-color{
+  background-color: #000;
+}
+.projects-color{
+  background-color: #000;
+}
+
+.contact-color {
+    background-color: #fff;
+}
+
+.nav{
+  background-color: #5FB4D0;
+}
+.mainMenu a {
+  height: 20%;
+  text-decoration: none;
+  font-size: 5vh;
+  color: rgba(255,255,255,0.5);
+  justify-content: center;
+  align-content: center;
+  display: block;
+
+}
+.mainMenu a:hover {
+    font-size: 6vh;
+    color: rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+.menuWord{
+  height: 100%;
+  width: 20vw;
+  font-family: "Sarpanch", sans-serif;
+  font-size: 2.5vh;
+  color: rgba(255,255,255,0.8);
+}
+.menuWord:hover{
+  color: #fff;
+  transition: 0.3s;
+}
+.menuIcon{
+  position: absolute;
+  padding-left: 4vw;
+  left: 0;
+  height: 20%;
+  text-align: left;
+  font-size: 10vh;
+  font-family: 'Titillium Web', sans-serif;
+  color: rgba(255,255,255,0);
+}
+
+@media only screen and (orientation: landscape){
+  .menuIcon{
+    position: absolute;
+    left: 15%;
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgba(255,255,255,0);
+  }
+}
+
+.menuIcon:hover{
+  color: rgba(255,255,255,0.3);
+  transition: 0.3s;
+}
+/**********************/
+
+
+
+/*******HERO section********/
+.hero{
+    background-image: url(images/comp_big-compressed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tint{
+    background-image: url(images/tint-compressed.jpg);
+    background-size: 100vw;
+    opacity: 0.2;
+}
+
+.greeting{
+    font-size: 3.5vh;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    text-shadow: -0.1em 0 rgba(255,255,255,0.4);
+    transition: 0.5s;
+}
+
+.heroLogo{
+  font-size: 40vw;
+
+}
+.icon-dmLogo{
+  color: rgba(255,255,255,0.1);
+  text-shadow: 0px -6px 10px rgba(255,255,255,0.2);
+  -webkit-text-stroke: 5px rgba(255,255,255,0.2);
+}
+.icon-dmLogo5px{
+  color: #fff;
+  -webkit-text-stroke: 4px rgba(255,255,255,0.1);
+}
+
+/* wider screen */
+@media only screen and (min-width: 400px) and (orientation: landscape){
+
+  .greeting{
+    font-size: 3.5vw;
+    transition: 0.5s;
+  }
+  .heroLogo{
+    font-size: 40vw;
+  }
+  .icon-dmLogo{
+    -webkit-text-stroke: 10px rgba(255,255,255,0.2);
+  }
+}
+
+/****************************/
+
+/*****PERSON section***********/
+
+.headshot{
+    border-radius: 50%;
+    width: 15vw;
+    min-width: 200px;
+    transition: 0.1s;
+    border: 2px solid #7c7c7c;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.aboutMeTextWrapper p {
+    font-size: 20px;
+}
+
+.bottomBorder{
+    background: linear-gradient(to right, transparent, #7c7c7c, #7c7c7c, transparent);
+    width: 80%;
+    height: 1px;
+}
+/***************************/
+
+/**PROJECTS section **/
+
+.projectCard{
+    border: 2px solid #7c7c7c;
+    background-color: #e3e3e3;
+}
+
+
+
+.cardShadow{
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+.projectImg_1{
+    background-image: url(images/quoteScreenShot.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_1:hover{
+    background-image: url(images/quote.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectImg_2{
+    background-image: url(images/wikiScreenshot.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_2:hover{
+    background-image: url(images/wikiViewer.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectImg_3{
+    background-image: url(images/cppHome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_3:hover{
+    background-image: url(images/cpp.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectImg_4{
+    background-image: url(images/twitchStatus.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_4:hover{
+    background-image: url(images/twitchStatus.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectImg_5{
+   background-image: url(images/larger_pet_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_5:hover{
+    background-image: url(images/petReminder.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectImg_6{
+   background-image: url(images/powerPlayRecruiting.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+}
+
+.projectImg_6:hover{
+    background-image: url(images/powerPlayRecruiting.gif);
+    background-size: contain;
+    transition: 0.2s;
+}
+
+.projectLink{
+    text-decoration: none;
+    color: #7c7c7c;
+    padding-bottom: 5px;
+}
+
+.projectLink:hover{
+    color: #000;
+}
+/************************/
+
+/****CONTACT section****/
+
+/* contact */
+#contact{
+  background-color: #178EB6;
+  box-shadow: 1px -20px 20px 0px #f2f2f2;
+}
+
+#contactTitle{
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+#contactForm{
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 2.5%;
+}
+
+.formInput{
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4vh;
+  outline: none;
+  background-color: rgba(255,255,255,0.8);
+  border: 2px solid #178EB6;
+}
+
+
+input[type="submit"],
+input[type="button"]{
+  border: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -mox-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  background-image: none;
+  background: #178EB6 !important;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 4vh;
+  padding: 0;
+  color: #fff;
+}
+
+.social-icon{
+  text-decoration: none;
+  color: #178EB6;
+  padding-right: 5vw;
+}
+
+#sendBtn:hover{
+    cursor: pointer;
+}

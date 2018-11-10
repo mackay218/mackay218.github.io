@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daniel MacKay Profile</title>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <!--local styles-->
+    <link rel="stylesheet" href="styles/layout.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/animations.css"/>
+
+    <!--logo icon-->
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="icon" href="dbLogoB&W.png">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Sarpanch:700|Titillium+Web" rel="stylesheet">
+
+    <!--for using jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    
+    <!--navigation-->
+    <script type="text/javascript" src="scripts/nav.js"></script>
+
+    <!--smooth scroll function-->
+    <script type="text/javascript" src="scripts/scroll.js"></script>
+
+    <!--for using typewriter effect credit to mattbolt -->
+    <script type="text/javascript" src="scripts/typed.min.js"></script>
+
+    <script src="scripts/greensock-js/src/minified/jquery.gsap.min.js"></script>
+    <script src="scripts/greensock-js/src/minified/TweenLite.min.js"></script>
+    <script src="scripts/greensock-js/src/minified/TimelineLite.min.js"></script>
+    <script src="scripts/greensock-js/src/minified/plugins/CSSPlugin.min.js"></script>
+    <script src="scripts/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scripts/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+    <script src="scripts/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scripts/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+
+    <script type="text/javascript" src="scripts/animations.js"></script>
+
+</head>
+<body>
+    <div id="menuBtn" onclick="openClose(); hamburger_x(this);">
+        <div class="bar1 bar" id="bar-one"></div>
+        <div class="bar2 bar" id="bar-two"></div>
+        <div class="bar3 bar" id="bar-three"></div>
+    </div>
+    <Main>
+        <div id="menuContainer" class="nav">
+            <div id="menu" class="mainMenu">
+                <a href="#hero">
+                    <div class="menuWord">Home<span class="icon-home menuIcon"></span></div>
+                </a>
+                <a href="#person">
+                    <div class="menuWord">About<span class="icon-user menuIcon"></span></div>
+                </a>
+                <a href="#projects">
+                    <div class="menuWord">Projects<span class="icon-embed2 menuIcon"></span></div>
+                </a>
+                <a href="#contact">
+                    <div class="menuWord" id="cntct">Contact<span class="menuIcon" id="at">@</span></div>
+                </a>
+            </div>
+        </div>
+        <section class="hero" id="hero">
+            <div class="tint"></div>
+            <div class="heroContent">
+                <div class="greeting">
+                    <h1>Hi, </h1>
+                    <h1>I'm Dan.</h1>
+                    <h1>I am a
+                        <div id="typed-strings">
+                            <p>creator.</p>
+                            <p>developer.</p>
+                            <p>maker.</p>
+                            <p>designer.</p>
+                        </div>
+                        <span id="typed"></span>
+                        <!--typewriter effect-->
+                        <script>
+                            var typed = new Typed('#typed', {
+                                stringsElement: '#typed-strings',
+                                typeSpeed: 150,
+                                backSpeed: 150,
+                                backDelay: 1200,
+                                loop: true,
+                            });
+                        </script>
+                    </h1>
+                </div>
+                <div class="icon-dmLogo heroLogo" id="logo"></div>
+                <div class="icon-dmLogo5px heroLogo"></div>
+            </div>
+        </section>
+        <section class="person" id="person">
+            <h2>About Me</h2>
+            <div class="personContent">
+                <div class="headshotContainer">
+                    <img class="headshot" 
+                        src="styles/images/prime_headshot.jpg" 
+                        alt="photo of Daniel MacKay"
+                    />
+                </div>
+                <div class="aboutMeTextWrapper">
+                    <p>
+                        My name is Daniel MacKay and I am a Full-stack Software Developer.
+                        I like to build functional responsive applications with design
+                        that stands out. I believe good design relies 
+                        on anticipating the user's intuitive experience and I strive to achieve
+                        this by constantly learning and practicing.
+                    </p>
+                </div>    
+            </div>
+            <div class="bottomBorder"></div>
+        </section>
+        <section class="projects" id="projects">
+            <h2>My Work</h2>
+            <div class="projectsContent">
+                    <div class="projectCardWrapper">
+                        <div class="projectCard">
+                            <div class="projectImg projectImg_5">
+                                <div class="bottomBorder"></div>
+                            </div>
+                            <p>
+                                An application built in React with Redux and Saga for veterinarians to track and send reminders to pet owners about vaccination
+                                due dates.
+                            </p>
+                            <a class="projectLink" target="_blank" href="https://pet-reminder.herokuapp.com/">
+                                Try it out
+                            </a>
+                        </div>
+                        <div class="cardShadow"></div>
+                    </div>
+                    <div class="projectCardWrapper">
+                        <div class="projectCard">
+                            <div class="projectImg projectImg_6">
+                                <div class="bottomBorder"></div>
+                            </div>
+                            <p>
+                                A team project build in React for a client. Power Play Recruiting is an applictation to help youth hockey players showcase
+                                their talents and hardwork for college and junior team coaches.
+                            </p>
+                            <a class="projectLink" target="_blank" href="https://ppr-hockey-demo.herokuapp.com/">
+                                Try it out
+                            </a>
+                        </div>
+                        <div class="cardShadow"></div>
+                    </div>
+                <div class="projectCardWrapper">
+                    <div class="projectCard">
+                        <div class="projectImg projectImg_1">
+                            <div class="bottomBorder"></div>
+                        </div>
+                        <p>
+                            This quote generator gives quotes from philosophers, writers, celebrities and more. There is a special feature that slighly alters the quote. Quotes can be tweeted
+                            with the push of a button.
+                        </p>
+                        <a class="projectLink" target="_blank" href="https://mackay2588.github.io/QuoteGenerator">
+                            Try it out
+                        </a>
+                    </div>
+                    <div class="cardShadow"></div>
+                </div>
+                <div class="projectCardWrapper">
+                    <div class="projectCard">
+                        <div class="projectImg projectImg_2">
+                            <div class="bottomBorder"></div>
+                        </div>
+                        <p>
+                            A search tool for wikipedia.org which gives several results for the search term entered. 
+                            If the result is an article a brief description is given. 
+                            Each result provides a link to the corresponding wikipedia page.
+                            Previous searches are shown and can be returned to with a click. 
+                            There is also a button for a random wikipedia page.
+                        </p>
+                        <a class="projectLink" target="_blank" href="https://mackay2588.github.io/WikipediaViewer/">
+                            Try it out
+                        </a>
+                    </div>
+                    <div class="cardShadow"></div>
+                </div>
+                <div class="projectCardWrapper">
+                    <div class="projectCard">
+                        <div class="projectImg projectImg_3">
+                            <div class="bottomBorder"></div>
+                        </div>
+                        <p>
+                            Cycle Path & Paddle is the first store in the Cuyuna Lakes area 
+                            that rents and sells bikes, canoes and kayaks. The area
+                            is home to the best mountain biking trails in Minnesota. 
+                            This is a multi-page demo website I have made for the store built
+                            using React via create-react-app.
+                        </p>
+                        <a class="projectLink" target="_blank" href="http://cppdemosite.s3-website.us-east-2.amazonaws.com/">
+                            Try it out
+                        </a>
+                    </div>
+                    <div class="cardShadow"></div>
+                </div>
+                <div class="projectCardWrapper">
+                    <div class="projectCard">
+                        <div class="projectImg projectImg_4">
+                            <div class="bottomBorder"></div>
+                        </div>
+                        <p>
+                            A web app to view the streaming status of favorite Twitch channels. 
+                            View lists of all, currently online, or currently offline
+                            saved channels. Add or remove channels. Each listed channel 
+                            links to the corresponding Twitch channel page.
+                        </p>
+                        <a class="projectLink" target="_blank" href="https://mackay2588.github.io/TwitchStreamStatus/">
+                            Try it out
+                        </a>
+                    </div>
+                    <div class="cardShadow"></div>
+                </div>
+            </div>
+        </section>
+        <div class="contact" >
+            <div class="contactContent" id="contact">
+                <div id="contactTitle">
+                    Let's Connect!
+                </div>
+                <div id="contactForm">
+                    <form action="https://formspree.io/mackay2588@gmail.com" method="POST" onsubmit="alert('Thank You!');">
+                        <label for="formName" name="name"></label>
+                        <input class="formInput" id="formName" type="text" name="name" placeholder=" Name" required>
+                        <label for="formEmail" name="email"></label>
+                        <input class="formInput" id="formEmail" type="text" name="email" placeholder=" Email Address" required>
+                        <label for="formMessage" name="message"></label>
+                        <textarea class="formInput" id="formMessage" type="text" name="message" placeholder=" Message" required></textarea>
+                        <label for="submit" name="send"></label>
+                        <input id="sendBtn" type="submit" name="send" value="Send">
+                    </form>
+                    <div id="mediaIcons">
+                        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/dmackay2588">
+                            <span class="icon-linkedin2"></span>
+                        </a>
+                        <a class="social-icon" target="_blank" href="https://github.com/mackay2588">
+                            <span class="icon-github"></span>
+                        </a>
+                        <a class="social-icon" target="_blank" href="https://twitter.com/mackay2588?ref_src=twsrc%5Etfw">
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </div>
+                </div>
+                <img src="styles/images/MNcontact.svg" id="MNcontact">
+            </div>
+        </div>
+    </Main>
+</body>
+</html>

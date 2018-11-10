@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daniel MacKay Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--favicon-->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+  <!--page style-->
+  <link rel="stylesheet" href="page-styles/layout.css">
+  <link rel="stylesheet" href="page-styles/style.css">
+  <!--logo icon-->
+  <link rel="stylesheet" href="page-styles/icon.css">
+  <link rel="icon" href="dbLogoB&W.png">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Sarpanch:700|Titillium+Web" rel="stylesheet">
+
+  <!--for using jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+
+  <!--font awesome icons-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--navigation-->
+  <script type="text/javascript" src="scripts/nav.js"></script>
+  <!--icon movement found on stackoverflow-->
+  <script type="text/javascript" src="scripts/randomMove.js"></script>
+  <!--animations-->
+  <link rel="stylesheet" href="page-styles/animations.css">
+  <script src="scripts/greensock-js/src/minified/jquery.gsap.min.js"></script>
+  <script src="scripts/greensock-js/src/minified/TweenLite.min.js"></script>
+  <script src="scripts/greensock-js/src/minified/TimelineLite.min.js"></script>
+  <script src="scripts/greensock-js/src/minified/plugins/CSSPlugin.min.js"></script>
+  <script src="scripts/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script src="scripts/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
+  <script src="scripts/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  <script src="scripts/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+  <script src="scripts/jquery.lettering-0.6.1.min.js"></script>
+
+  <script type="text/javascript" src="scripts/animations.js"></script>
+  <!--smooth scroll function-->
+  <script type="text/javascript" src="scripts/scroll.js"></script>
+  <!--for using typewriter effect credit to mattbolt -->
+  <script type="text/javascript" src="scripts/lib/typed.min.js"></script>
+
+</head>
+<body>
+  <div id="menuBtn" onclick="openClose(); hamburger_x(this);">
+    <div class="bar1 bar" id="bar-one"></div>
+    <div class="bar2 bar" id="bar-two"></div>
+    <div class="bar3 bar" id="bar-three"></div>
+  </div>
+  <div id="main">
+    <div id="menuContainer" class="nav">
+      <div id="menu" class="mainMenu">
+        <a href="#hero">
+          <div class="menuWord">Home<span class="icon-home menuIcon"></span></div>
+        </a>
+        <a href="#personTop">
+          <div class="menuWord">About<span class="icon-user menuIcon"></span></div>
+        </a>
+        <a href="#projects">
+          <div class="menuWord">Projects<span class="icon-embed2 menuIcon"></span></div>
+        </a>
+        <a  href="#resume">
+          <div class="menuWord">Resume<span class="icon-profile menuIcon"></span></div>
+        </a>
+        <a href="#contact">
+          <div class="menuWord" id="cntct">Contact<span class="menuIcon" id="at">@</span></div>
+        </a>
+      </div>
+    </div>
+    <div class="section" id="hero">
+      <div class="banner" id="heroImage"></div>
+      <div class="banner" id="tint"></div>
+      <div id="greeting">
+        <h1>Hi, </h1>
+        <h1>I'm Dan.</h1>
+        <h1>I am a
+          <div id="typed-strings">
+            <p>creator.</p>
+            <p>developer.</p>
+            <p>maker.</p>
+            <p>designer.</p>
+          </div>
+          <span id="typed"></span>
+          <!--typewriter effect-->
+          <script>
+            var typed = new Typed('#typed', {
+              stringsElement: '#typed-strings',
+              typeSpeed: 150,
+              backSpeed: 150,
+              backDelay: 1200,
+              loop: true,
+            });
+          </script>
+        </h1>
+      </div>
+      <div class="icon-dmLogo heroLogo" id="logo"></div>
+      <div class="icon-dmLogo5px heroLogo"></div>
+      <div id="arrowContainer">
+        <a href="#personTop"><span id="arrow" class="fas fa-chevron-down"></span></a>
+      </div>
+    </div>
+  <div class="section" id="person">
+    <div id="personTop"></div>
+    <div id="leftFrame">
+      <div id="leftFrame2"></div>
+    </div>
+    <div id="rightFrame">
+      <div id="rightFrame2"></div>
+    </div>
+    <div class="aboutMeTitle" id="aboutTitle">About</div>
+    <div class="aboutMeTitle" id="meTitle">Me</div>
+    <div id="clipWrapper">
+        <h3 id="headOpenTag">&lt;head&gt;</h3>
+        <h3 id="headCloseTag">&lt;/head&gt;</h3>
+        <div id="psuedoGlow"></div>
+        <img src="page-styles/images/headshotback.svg" alt="silhouette" class="headBehind" id="headshotBack" onclick="closeHead()">
+        <img  src="page-styles/images/headshot.svg" alt="photo of Dan" class="head" id="headshot" onclick="openHead()">
+        <svg width="0" height="0" viewbox="0 0 10 10" preserveAspectRatio="xMidYMid meet">
+          <clipPath id="clipPolygon" clipPathUnits="objectBoundingBox">
+            <polygon points="0.344 0.423,0.343 0.372,0.351 0.355,0.372 0.325,0.396
+              0.291,0.419 0.265,0.451 0.242,0.475 0.233,0.522 0.217,0.538 0.217,0.552 0.205,0.551
+              0.227,0.564 0.226,0.574 0.234,0.585 0.228,0.584 0.241,0.620 0.263,0.651 0.277,0.700
+              0.342,0.711 0.362,0.722 0.402,0.719 0.486,0.730 0.498,0.726 0.521,0.728 0.556,0.725
+              0.584,0.721 0.607,0.715 0.629,0.696 0.629,0.688 0.690,0.675 0.721,0.645 0.763,0.624
+              0.793,0.594 0.822,0.568 0.838,0.510 0.841,0.466 0.834,0.441 0.814,0.422 0.785,0.402
+              0.758,0.383 0.726,0.367 0.692,0.355 0.655,0.355 0.626,0.342 0.617,0.339 0.598,0.340
+              0.564,0.341 0.529,0.342 0.494,0.344 0.458">
+            </polygon>
+          </clipPath>
+        </svg>
+        <div id="IEhead">
+          <p>
+            Not viewable on microsoft edge/IE.
+          </p>
+        </div>
+        <div class="headBehind" id="headClip">
+          <div class="headBehind" id="inner-HeadClip">
+            <div class="headBehind" id="iconContainer">
+              <div class="d">
+                <span class="fas fa-music music-icon"></span>
+              </div>
+              <div class="e">
+                <span class="fas fa-music music-icon"></span>
+              </div>
+              <div class="f">
+                <span class="fas fa-music music-icon"></span>
+              </div>
+              <div class="a">
+                <span class="fab fa-css3-alt" id="ccs3-icon"></span>
+              </div>
+              <div class="b">
+                <span class="fab fa-html5" id="html5-icon"></span>
+              </div>
+              <div class="c">
+                <span class="fab fa-js-square" id="js-icon"></span>
+              </div>
+              <div class="h">
+                <span class="fab fa-css3-alt" id="ccs3-icon2"></span>
+              </div>
+              <div class="i">
+                <span class="fab fa-html5" id="html5-icon2"></span>
+              </div>
+              <div class="j">
+                <span class="fab fa-js-square" id="js-icon2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="aboutWrapper">
+      <div class="aboutClose" id="aboutMe">
+        <div id="innerFrame" class="innerFrame">
+          <p id="aboutMeText">
+            My name is Daniel MacKay and I'm an aspiring Web Developer.
+            I like to build functional responsive web apps with design that
+            stands out. I believe good design relies on anticipating the user's intuitive
+            experience. I also like a little something extra now and then.
+          </p>
+          <p id="headInstruction">
+            <i>See what's going on in my head...</i>
+          </p>
+          <p id="workInstruction">
+            <i>and check out my work below.</i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="projects">
+    <div id="lowerProjectLayer">
+      <div class="projectLayer1 blueImage" id="blue1" onclick="showBlue()">
+        <div class="darkTint"></div>
+        <div class="layer1Lable">
+          Wikipedia Viewer
+        </div>
+      </div>
+      <div class="projectLayer1 greenImage" id="green1" onclick="showGreen()">
+        <div class="darkTint"></div>
+        <div class="layer1Lable">
+          Twitch Status Viewer
+        </div>
+      </div>
+      <div class="projectLayer1 redImage" id="red1" onclick="showRed()">
+        <div class="darkTint"></div>
+        <div class="layer1Lable">
+          Random Quote Generator
+        </div>
+      </div>
+      <div class="projectLayer1 yellowImage" id="yellow1" onclick="showYellow()">
+        <div class="darkTint"></div>
+        <div class="layer1Lable">
+          Store Website
+        </div>
+      </div>
+    </div>
+
+    <div class="layer" id="upperProjectLayer">
+      <div class="projectLayer2" id="blue2">
+        <div class="layer2Lable">Wikipedia Viewer</div>
+        <div class="projectImg blue" id="blueImg">
+          <div class="blueGIF gif"></div>
+        </div>
+        <div class="layer2Info blue" id="blueInfo">
+          <div class="closeBtn" onclick="showBlue()">Close</div>
+          <p>
+            A search tool for wikipedia.org which gives several results
+            for the search term entered. If the result is an article
+            a brief description is given. Each result provides a link
+            to the corresponding wikipedia page. Previous searches are
+            shown and can be returned to with a click. There is also
+            a button for a random wikipedia page.
+          </p>
+          <a class = "projectLink" target="_blank" href="https://mackay2588.github.io/WikipediaViewer">
+            Try it out.
+          </a>
+        </div>
+      </div>
+      <div class="projectLayer2" id="green2">
+        <div class="layer2Lable">Twitch Status Viewer</div>
+        <div class="projectImg green" id="greenImg">
+          <div class="greenGIF gif"></div>
+        </div>
+        <div class="layer2Info green" id="greenInfo">
+          <div class="closeBtn" onclick="showGreen()">Close</div>
+          <p>
+            A web app to view the streaming status of favorite Twitch channels.
+            View lists of all, currently online, or currently offline saved
+            channels. Add or remove channels. Each listed channel links to the
+            corresponding Twitch channel page.
+          </p>
+          <a class = "projectLink" target="_blank" href="https://mackay2588.github.io/TwitchStreamStatus">
+            Try it out.
+          </a>
+        </div>
+      </div>
+      <div class="projectLayer2" id="red2">
+        <div class="layer2Lable">Random Quote Generator</div>
+        <div class="projectImg red" id="redImg">
+          <div class="redGIF gif"></div>
+        </div>
+        <div class="layer2Info red" id="redInfo">
+            <div class="closeBtn" onclick="showRed()">Close</div>
+            <p>
+                This quote generator gives quotes from philosophers, writers,
+              celebrities and more. The quotes can be "Trumpified" with the push
+              a of button, "Trumpified" quotes occasionally even make sense.
+              Quotes both original and "Trumpifed" can be tweeted out with the
+              push of a button.
+            </p>
+            <a class = "projectLink" target="_blank" href="https://mackay2588.github.io/QuoteGenerator">
+              Try it out.
+            </a>
+        </div>
+      </div>
+      <div class="projectLayer2" id="yellow2">
+        <div class="layer2Lable">Store Website</div>
+        <div class="projectImg yellow" id="yellowImg">
+          <div class="yellowGIF gif"></div>
+        </div>
+        <div class="layer2Info yellow" id="yellowInfo">
+          <div class="closeBtn" onclick="showYellow()">Close</div>
+          <p>
+            Cycle Path & Paddle is the first store
+            in the Cuyuna Lakes area that rents and sells
+            bikes, canoes and kayaks. The area is home to the
+            best mountain biking trails in Minnesota.
+            This is a multi-page demo website I have made for the store built
+            using React via create-react-app.
+          </p>
+          <a class = "projectLink" target="_blank" href="http://cppdemosite.s3-website.us-east-2.amazonaws.com">
+            Check it out.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="resume">
+    <div id="resumeTitle">Resume</div>
+    <div id="resumeContent">
+      <h2 class="rezSecTitle">Skills</h2>
+      <div class="rez" id="skills">
+        <ul>
+          <li>
+            HTML, CSS, Javascript, Jquery.
+          </li>
+          <li>Problem solving
+          </li>
+          <li>Data collection
+          </li>
+          <li>Written and verbal communication
+          </li>
+          <li>Microsoft Office (word,excel,powerpoint)</li>
+          <li>Strong customer service (developed through hospitality industy experience)
+          </li>
+          <li>Ability to work well under pressure
+          </li>
+          <li>Music composition, recording, and audio engineering
+          </li>
+        </ul>
+      </div>
+      <h2 class="rezSecTitle">Education</h2>
+      <div class="rez" id="education">
+        <ul>
+          <li>B.S. Biology, minor in Chemistry - University of Minnesota Duluth</li>
+          <li>EMT-B</li>
+          <li>CNA</li>
+          <li>CS50x - Harvard Course</li>
+          <li>Free Code Camp Front End - in progress</li>
+        </ul>
+      </div>
+      <h2 class="rezSecTitle">Experience</h2>
+      <div class="rez" id="experience">
+        <h4>Mixologist</h4>
+        <ul>
+          <li>Caribou Coffee -Barista - January 2016 -June 2016</li>
+          <li>
+            Ruby Tuesday -  Bartender - October 2010 - August 2015
+          </li>
+          <li>Little Angie's Cantina - Bartender - April 2008 - March 2009
+          </li>
+          <li>Ruttger's Bay Lake Lodge - Bartender -   March 2006 - October 2008
+          </li>
+        </ul>
+        <h4>Biologist/Healthcare</h4>
+        <ul>
+          <li>Certified Nursing Assistant - September 2015 - December 2015
+          </li>
+          <li> Emergency Medical Technician - December 2010 - January 2011
+          </li>
+          <li>Lab Assistant -  September 2008 - November 2010
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="contact">
+    <div id="contactTitle">
+      Let's Connect!
+    </div>
+    <div id="contactForm">
+      <form action="https://formspree.io/mackay2588@gmail.com" method="POST" onsubmit="alert('Thank You!');">
+        <label for="formName" name="name"></label>
+        <input class="formInput" id="formName" type="text" name="name" placeholder=" Name" required>
+        <label for="formEmail" name="email"></label>
+        <input class="formInput" id="formEmail" type="text" name="email" placeholder=" Email Address" required>
+        <label for="formMessage" name="message"></label>
+        <textarea class="formInput" id="formMessage" type="text" name="message" placeholder=" Message" required></textarea>
+        <label for="submit" name="send"></label>
+        <input id="sendBtn" type="submit" name="send" value="Send">
+      </form>
+      <div id="mediaIcons">
+        <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/mackay2588/">
+          <span class="icon-linkedin2"></span>
+        </a>
+        <a class="social-icon" target="_blank" href="https://github.com/mackay2588">
+          <span class="icon-github"></span>
+        </a>
+        <a class="social-icon" target="_blank" href="https://twitter.com/mackay2588?ref_src=twsrc%5Etfw">
+          <span class="icon-twitter"></span>
+        </a>
+      </div>
+    </div>
+    <img src="page-styles/images/MNcontact.svg" id="MNcontact">
+  </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>

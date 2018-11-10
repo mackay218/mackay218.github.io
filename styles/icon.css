@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1gtsad');
+  src:  url('fonts/icomoon.eot?1gtsad#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1gtsad') format('truetype'),
+    url('fonts/icomoon.woff?1gtsad') format('woff'),
+    url('fonts/icomoon.svg?1gtsad#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dmLogo:before {
+  content: "\e900";
+}
+.icon-dmLogo5px:before {
+  content: "\e901";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-profile:before {
+  content: "\e923";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-accessibility:before {
+  content: "\e9b2";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
