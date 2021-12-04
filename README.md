@@ -1,4 +1,4 @@
-# mackay2588.github.io
+# mackay218.github.io
 
 Personal Website to display my projects.
 
